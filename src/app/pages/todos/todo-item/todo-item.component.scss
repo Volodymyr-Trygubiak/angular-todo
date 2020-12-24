@@ -1,0 +1,40 @@
+$breakpoints: (
+  xl: 1040px,
+  lg: 992px,
+  md: 768px,
+  sm: 576px
+);
+
+.is-done {
+  text-decoration: line-through;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .check-box {
+  margin-right: 15px;
+  cursor: pointer;
+  }
+  
+  .todo-btn-group button:not(:last-child) {
+  margin-right: 5px;
+  }
+  
+  .todo-description {
+  padding: 10px 0px;
+  }
+  
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    .todo-header {
+      flex-direction: column;
+    }
+  
+    .todo-description {
+      text-align: center;
+    }
+  
+  }
