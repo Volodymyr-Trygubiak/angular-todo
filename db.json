@@ -1,0 +1,38 @@
+{
+  "todos": [
+    {
+      "title": "Learn JS",
+      "description": "Javascript",
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "title": "Angular CLI",
+      "description": null,
+      "isDone": true,
+      "id": 5
+    },
+    {
+      "title": "AngularJs",
+      "description": null,
+      "isDone": false,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "title": "Meghan Rice",
+      "email": "meghan.rice@example.com",
+      "description": "Test description text",
+      "photo": "https://randomuser.me/api/portraits/women/51.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chloe Fields",
+      "email": "chloe.fields@example.com",
+      "description": "Test description text",
+      "photo": "https://randomuser.me/api/portraits/women/10.jpg"
+    }
+  ]
+}
