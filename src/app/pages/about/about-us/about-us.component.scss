@@ -1,0 +1,25 @@
+.about-text {
+  font-size: 18px;
+  span {
+    font-size: 24px;
+  }
+}
+
+.card {
+  min-height: 245px;
+  margin-bottom: 15px;
+}
+.card-link {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    display: flex; 
+    justify-content: center;
+  }
+  
+  .card {
+    max-width:  350px;
+  }
+}

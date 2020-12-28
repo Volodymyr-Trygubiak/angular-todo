@@ -1,20 +1,19 @@
   <h2 class="text-center">About Us</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sequi tempore consequatur ipsam esse modi.</p>
-
+  <p class="about-text"> <span>Hello</span>, we are a group of people who created this project with the help of our teacher Serhiy Koziuk, and who studied at the Beetroot Academy to get used to a new field of specialty!</p>
   <div class="row">
-    <div class="col-md-6 col-lg-4"
-    *ngFor="let item of userList">
+    <div class="about-wrapper col-md-6 col-lg-4" *ngFor="let item of userList">
       <div class="card">
-        
-        <img class="card-img-top" [src]="item.photo" alt="Card image cap">
+
+        <img class="card-img-top" [src]="item.photo" alt="Card image">
         <div class="card-body">
           <h5 class="card-title">{{item.name}}</h5>
           <p class="card-text">{{item.description}}
-            <a [href]= "'mailto' + item.email">{{item.email}}</a>
+            <a class="card-link" [href]="'mailto' + item.email">{{item.email}}</a>
           </p>
-          <a href="#" class="btn btn-primary"
-          [routerLink]="item.id">More info</a>
+          <a href="#" class="btn btn-primary" [routerLink]="item.id">More info</a>
         </div>
       </div>
     </div>
   </div>
+
+

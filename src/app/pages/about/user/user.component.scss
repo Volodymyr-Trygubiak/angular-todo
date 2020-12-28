@@ -1,0 +1,12 @@
+.user-name {
+  margin: 15px 0;
+}
+
+.user-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  img {
+    max-width: 400px;
+  }
+}

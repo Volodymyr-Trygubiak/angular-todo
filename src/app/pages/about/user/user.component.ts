@@ -9,6 +9,7 @@ import { UsersService } from 'src/app/core/services/users/users.service';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
+  userId:number;
   userData: User;
 
   constructor(
@@ -23,7 +24,5 @@ export class UserComponent implements OnInit {
 
   private async getUserInfo(userId: number): Promise<void> {
     this.userData = await this.usersService.getUser(userId).toPromise();
-    console.log(this.userData);
-    
   }
 }
